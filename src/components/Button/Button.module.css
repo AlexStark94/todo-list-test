@@ -1,0 +1,32 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: .5rem 2rem;
+    border-radius: .25rem;
+    border: 1px solid #d3d3d3;
+    font-weight: 600;
+    font-size: .85rem;
+    background: linear-gradient(145deg, #ffffff, #ebebeb);
+    box-shadow:  2px 2px 7px #dfdfdf,
+                -8px -8px 7px #ffffff;
+}
+
+.buttonContainer:hover {
+    background: linear-gradient(145deg, #ebebeb, #fff);
+    box-shadow:  -2px -2px 7px #dfdfdf,
+                -8px -8px 7px #ffffff;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background: linear-gradient(145deg, #494949, #252525);
+    color: white;
+}
+
+.disabled:hover {
+    background: linear-gradient(145deg, #626262, #4c4c4c);
+    color: white;
+}

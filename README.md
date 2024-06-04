@@ -1,46 +1,105 @@
-# Getting Started with Create React App
+# Todo List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple and minimalistic Todo List application built with React, TypeScript, Vite, and Tailwind CSS. The application allows users to add new tasks, filter tasks by active and completed status, and store tasks in local storage.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add new tasks
+- Mark tasks as completed
+- Filter tasks by active and completed status
+- Persist tasks in local storage
+- Custom components with unit tests
 
-### `npm start`
+## Tools and Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**: A JavaScript library for building user interfaces
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript
+- **Jest**: A delightful JavaScript testing framework
+- **React Testing Library**: A library for testing React components
+- **@testing-library/jest-dom**: Custom jest matchers to test the state of the DOM
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm (or yarn) installed on your machine
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+   git clone https://github.com/your-username/todo-list.git
+   cd todo-list
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install the dependencies:
 
-### `npm run eject`
+```sh
+    npm install
+    # or
+    yarn install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Running the Application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To start the development server:
+```sh
+    npm run dev
+    # or
+    yarn dev
+```
+Open your browser and navigate to http://localhost:3000 to see the application running.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Running Tests
+To run the unit tests:
+```sh
+    npm test
+    # or
+    yarn test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Project Structure
+```css
+    src/
+    ├── components/
+    │   ├── Button/
+    │   │   ├── Button.tsx
+    │   │   ├── Button.module.css
+    │   │   └── Button.test.tsx
+    │   ├── TodoInput/
+    │   │   ├── TodoInput.tsx
+    │   │   ├── TodoInput.module.css
+    │   │   └── TodoInput.test.tsx
+    │   ├── TodoItem/
+    │   │   ├── TodoItem.tsx
+    │   │   ├── TodoItem.module.css
+    │   │   └── TodoItem.test.tsx
+    ├── hooks/
+    │   ├── useLocalStorage.ts
+    │   └── useLocalStorage.test.ts
+    ├── styles/
+    │   ├── index.css
+    ├── App.tsx
+    ├── index.tsx
+```
 
-## Learn More
+### Custom Hooks
+The project includes a custom hook useLocalStorage for managing state synchronized with local storage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## useLocalStorage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```tsx
+    import useLocalStorage from './hooks/useLocalStorage';
+
+    const [value, setValue] = useLocalStorage('key', 'default value');
+```
+
+### License
+This project is licensed under the MIT License.
+
+
+## Contact
+
+For any questions or suggestions, feel free to contact [ia.corral94@gmail.com].
+

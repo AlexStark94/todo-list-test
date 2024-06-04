@@ -1,0 +1,11 @@
+.container {
+    margin-top: 2rem;
+    background-color: #dedede;
+    padding: 1rem .5rem;
+    height: 20rem;
+    overflow: auto;
+    border-radius: .5rem;
+    background: #cfcfcf;
+    box-shadow: inset 26px 26px 92px #e6e6e6,
+                inset -26px -26px 92px #ffffff;
+}
