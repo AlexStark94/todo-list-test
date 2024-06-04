@@ -29,7 +29,7 @@ This is a simple and minimalistic Todo List application built with React, TypeSc
 1. Clone the repository:
 
 ```sh
-   git clone https://github.com/your-username/todo-list.git
+   git clone https://github.com/AlexStark94/todo-list.git
    cd todo-list
 ```
 
